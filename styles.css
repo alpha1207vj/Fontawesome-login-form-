@@ -1,0 +1,458 @@
+@font-face {
+    font-family: 'cera-round-pro' ;
+    src: url(cera-round-pro-free-demo-typemates-160120/Demo_fonts/Fontspring-DEMO-ceraroundpro-black.otf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url(images/icons-gray-bg.svg);
+    background-color:  rgba(228, 221, 221, 0.76);
+
+}
+.topbar{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-flag
+{
+    font-size: 20px;
+    margin-left:  125px;
+    color: rgba(20, 111, 190, 0.856);
+    transition: all 0.1s linear;
+}
+.fa-headphones-simple
+{
+    font-size: 25px;
+    margin-right:  125px;
+    margin-top: 50px;
+    color: rgba(20, 111, 190, 0.856);
+    transition: all 0.1s ease;
+}
+.topbar-animation
+{
+
+    width: 100px;
+    height: 50px;
+    top: -35px;
+    right: 95px;
+    background-color: transparent;
+    position: relative;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+.rectangle-animation
+{
+
+    position: absolute;
+    top: -75px;
+    left: -49px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(24, 49, 83);
+    clip-path: polygon(27% 0, 80% 0, 80% 88%, 63% 88%, 54% 100%, 46% 88%, 27% 88%);
+    transform:  scaleY(0.25999) scaleX(0.34) rotate(-90deg)
+}
+.text-animation
+{
+    position: absolute;
+    left: 22px;
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.fa-flag:hover
+{
+   color: #fab005;
+}
+.headphones-link:hover ~ .topbar-animation
+{
+    opacity: 1;
+    transform: translateX(-5px);
+}
+.headphones-link:hover .fa-headphones-simple
+{
+    color: #fab005;
+}
+main
+{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-top: 80px;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 110px
+}
+main form
+{
+    width: 400px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.form-head
+{
+   
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+   
+}
+.text1
+{
+    font-family: 'cera-round-pro';
+    letter-spacing: 0.4em;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fab005;
+}
+.text2{
+    font-family: 'cera-round-pro';
+    font-size: 27px;
+    color:  rgb(24, 49, 83);
+    letter-spacing: 2px;
+    padding: 0 10px 0 10px;
+    margin : -34px 0 -45px 5px;
+}
+.text3
+{
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 16px;
+    color:  rgb(24, 49, 83);
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+}
+.form-input
+{
+   
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    height: 300px;
+    margin-top: -200px;
+    padding: 0 15px 0px 15px ;
+}
+.emoji
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fab005;
+    position: relative;
+    top: -20px;
+}
+.eyes .lefteye
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(24, 49, 83);
+    position: absolute;
+    top: 20px;
+    left: 17px;
+}
+.eyes .righteye
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(24, 49, 83);
+    position: absolute;
+    top: 20px;
+    right: 17px;
+}
+.mouth
+{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    clip-path: path("M 40,40 C 70,80 100,80 130,40 C 100,50 70,50 40,40");
+    transform: scale(0.5);
+    position: absolute;
+    left: -57px;
+    top: -25px;
+}
+#input-mail 
+{
+    margin-top: 50px ;
+    height: 60px;
+    border-radius: 15px;
+    border: 2.5px solid rgb(24, 49, 83);
+    box-shadow: inset 0 0 10px rgb(194, 186, 186);
+    padding-left: 65px;
+    outline-color: rgb(111, 201, 231);
+    outline-width: 50px;
+    outline-offset: 4px;
+    font-family: Outfit;
+}
+.label-mail
+{
+    font-family: 'cera-round-pro' ;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 22px;
+    left: 18px;
+    color: rgb(24, 49, 83);
+}
+.fa-envelope
+{
+   
+    position: absolute;
+    left: 50px;
+    top: 75px;
+    font-size: 20px;
+    color: rgb(24, 49, 83);
+}
+#input-password
+{
+
+    margin-bottom: 55px;
+    height: 60px;
+    border-radius: 15px;
+    border: 2.5px solid rgb(24, 49, 83);
+    box-shadow: inset 0 0 10px rgb(194, 186, 186);
+    padding-left: 65px;
+    outline-color: rgb(111, 201, 231);
+    outline-width: 50px;
+    outline-offset: 4px;
+    
+}
+.label-password
+{
+   
+    font-family: 'cera-round-pro' ;
+    font-size: 17px;
+    letter-spacing: 0.5px; 
+    color: rgb(24, 49, 83);
+    position: absolute;
+    top: 150px;
+    left: 18px;
+}
+.fa-lock
+{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(24, 49, 83);
+    bottom: 78px;
+    left: 50px;
+
+}
+::placeholder
+{
+    font-family: Outfit;
+    font-size: 18px;
+}
+.submit
+{
+    height: 60px;
+    margin: -275px 15px 0px 15px;
+    position: relative;
+    bottom: -115px ;
+    background-color: #fab005;
+    border-radius: 10px;
+    box-shadow: -0.2px 8px 0 rgb(24, 49, 83);
+    font-family:  'cera-round-pro' ;
+    font-size: 18px;
+    transition: backround-color 0.1s linear;
+}
+.submit:hover
+{
+    background-color: hsl(42, 97%, 46%);
+}
+.submit:focus{
+    background-color: rgb(24, 49, 83);
+    border: none;
+    padding: 9px 3px 0 0px;
+    color: #fab005;
+    box-shadow: 0px 0px 0px 3px rgb(111, 201, 231) ;
+
+}
+.form-bottom
+{
+   
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px 0 12px;
+}
+.label-check
+{
+  font-family: Outfit;
+  font-weight: 300;
+}
+.form-bottom a
+{
+    font-family: Outfit;
+    color: rgb(39, 39, 184);
+}
+.form-bottom a:hover
+{
+    color: rgb(100, 197, 230);
+}
+.footer-message
+{
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+footer
+{
+    background-color: rgb(24, 49, 83);
+    height: 90px;
+    padding: 50px 20px 0 20px;
+}
+.footer-elements
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-link a
+{
+    margin: 0 300px 0 50px;
+    text-decoration: none ;
+    font-family: 'cera-round-pro';
+    color: white;
+
+}
+.Link 
+{
+    padding: 0 15px 0 15px;
+    text-decoration: none;
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 200;
+    color: wheat;
+}
+@media(max-width: 1115px) and (min-width: 780px )
+{
+
+    .footer-elements
+    {
+        flex-direction: column;
+        align-items: flex-start;   
+    }
+    .secondary-links
+    {
+        margin-left: 35px;
+    }
+}
+@media(max-width: 779px)
+{
+    footer
+    {
+        height: 250px;
+    }
+    .footer-elements
+    {
+        flex-direction: column;
+        align-items: flex-start;   
+    }
+    .secondary-links
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-link
+    {
+        font-size: 11px;
+        font-weight: bold;
+        margin-left: -60px;
+    }
+    .secondary-links a 
+    {
+        font-size: 12px;
+        padding: 15px 0 15px 0 ;
+        margin-left: -10px;
+    }
+    
+}
+@media(max-width: 504px)
+{
+    .topbar .fa-flag
+    {
+        margin-left: 45px ;
+    }
+    .topbar .fa-headphones-simple
+    {
+        margin-right: 35px ;
+    }
+    .textpart
+    {
+        position: relative;
+        top: -14.5px;
+        left: 160px;
+    }
+    main form
+    {
+        
+        width: 300px;
+        height: 700px;
+    }
+    
+    .text2-portion1
+    {
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .text2-portion2
+    {
+        margin-left: 70px;
+
+    }
+    .text3{
+        font-size: 12.5px;
+        margin-top: 15px
+    }
+    #input-mail,#input-password
+    {
+        padding-left: 40px;
+    }
+    .fa-envelope,.fa-lock
+    {
+        margin-left: -20px;
+        margin-top: -2px;
+    }
+    .fa-lock{
+        margin-bottom: unset;
+    }
+}
+@media(max-width: 400px)
+{
+    .topbar .fa-headphones-simple
+    {
+      position: absolute;
+      top: -25px;
+      right :4px
+    }
+    .footer-message
+    {
+        font-size: 14px;
+    }
+    .topbar-animation
+    {
+       margin-top: 70px;
+       margin-right: -35px;
+    }
+}
